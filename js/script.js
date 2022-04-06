@@ -1,6 +1,6 @@
-import Slide from './slide.js';
+import { SlideNav } from './slide.js';
 
-const slide = new Slide('.slide', '.container');
+const slide = new SlideNav('.slide', '.container');
 slide.init();
 
-slide.changeSlide(3);
+slide.addArrow('.prev', '.next');
